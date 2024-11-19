@@ -15,16 +15,16 @@ formPresupuesto.addEventListener('submit', function(event) {
 
     // Cálculos
     const totalProducto = precioUnitario * cantidad;
-    
-    // Ahora el costo de instalación es de $5,000 por metro lineal
-    const costoInstalacion = incluyeInstalacion ? (5000 * cantidad) : 1;
+
+    // Calculamos el costo de instalación por metro lineal
+    const costoInstalacion = incluyeInstalacion ? (5000 * cantidad) : 0;
 
     const totalFinal = totalProducto + costoInstalacion;
 
     // Mostrar resultado
     resultadoPresupuesto.innerHTML = `
         <p><strong>Producto seleccionado:</strong> ${productoSelect.options[productoSelect.selectedIndex].text}</p>
-        <p><strong>Cantidad (metros lineales):</strong> ${cantidad}</p>
+        <p><strong>Cantidad (metros lineales):</strong> ${cantidad} m</p>
         <p><strong>Precio por metro lineal:</strong> $${precioUnitario.toLocaleString()}</p>
         <p><strong>Total del producto:</strong> $${totalProducto.toLocaleString()}</p>
         <p><strong>Instalación:</strong> ${incluyeInstalacion ? 'Sí' : 'No'}</p>
@@ -32,3 +32,4 @@ formPresupuesto.addEventListener('submit', function(event) {
         <p><strong>Total final:</strong> $${totalFinal.toLocaleString()}</p>
     `;
 });
+
