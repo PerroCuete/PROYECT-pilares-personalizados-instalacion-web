@@ -301,10 +301,11 @@ form button:hover {
     display: block;
     margin: 0 auto;
 }
-/* Centrar títulos en la sección de propuesta */
+/* Centrar título principal de Propuesta de Valor */
 #propuesta h2 {
     text-align: center;
 }
+
 /* Centrar títulos en la sección de innovación */
 #innovacion h2,
 #innovacion h3 {
