@@ -46,11 +46,8 @@ main {
     margin: 0 auto;
 }
 
-/* Sección común para cada apartado (Misión, Visión, Valores, etc.) */
+/* Estilo común para las secciones */
 section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     margin-bottom: 30px;
     padding: 20px;
     background-color: #fff;
@@ -58,46 +55,47 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-section img {
-    max-width: 250px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 8px;
-}
-
-/* Título de cada sección */
+/* Títulos */
 section h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #333;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
-/* Estilos para el texto dentro de cada sección */
+/* Contenido de las secciones */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.content img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Párrafos */
 section p {
     font-size: 1.2em;
     line-height: 1.8;
     color: #555;
+    max-width: 65%;
 }
 
-/* Diseño de cada apartado para asegurar que las imágenes no sobrepasen el texto */
-section#bienvenida, section#mision-vision, section#valores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+/* Para la sección de propósito sin imagen */
+#proposito {
+    text-align: center;
 }
 
-section#bienvenida img, section#mision-vision img, section#valores img {
-    flex: 1;
-    max-width: 220px;
-    margin: 0 15px 15px 0;
+#proposito p {
+    font-size: 1.2em;
+    color: #555;
 }
 
-section#bienvenida div, section#mision-vision div, section#valores div {
-    flex: 2;
-    max-width: 850px;
-}
-
+/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -110,13 +108,23 @@ footer {
 
 /* Media Query para dispositivos móviles */
 @media (max-width: 768px) {
-    section {
+    .content {
         flex-direction: column;
         text-align: center;
     }
 
-    section img {
+    .content img {
+        width: 80%;
         margin-bottom: 20px;
     }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1.1em;
+    }
 }
+
 
