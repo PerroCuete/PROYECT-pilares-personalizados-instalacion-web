@@ -1,4 +1,4 @@
-/* Estilo general */
+/* General */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -8,9 +8,9 @@ body {
     color: #333;
 }
 
-/* Encabezado */
+/* Header */
 header {
-    background: #333;
+    background: #007bff;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -25,32 +25,40 @@ header nav ul {
 }
 header nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Secciones */
 main section {
     padding: 2rem;
-    text-align: center;
-    margin: 1rem 0;
+    margin: 2rem auto;
     background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 main section h2 {
     color: #007bff;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+main section p {
+    font-size: 1rem;
+    color: #555;
 }
 
-/* Pie de página */
+/* Footer */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: relative;
 }
