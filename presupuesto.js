@@ -19,7 +19,14 @@ formPresupuesto.addEventListener('submit', function(event) {
     // Calculamos el costo de instalación por metro lineal
     const costoInstalacion = incluyeInstalacion ? (5000 * cantidad) : 0;
 
-    const totalFinal = totalProducto + costoInstalacion;
+    // Calculamos el total antes de IVA
+    const totalAntesIVA = totalProducto + costoInstalacion;
+
+    // Calculamos el IVA (19%)
+    const iva = totalAntesIVA * 0.19;
+
+    // Total final con IVA incluido
+    const totalFinal = totalAntesIVA + iva;
 
     // Mostrar resultado
     resultadoPresupuesto.innerHTML = `
@@ -29,7 +36,8 @@ formPresupuesto.addEventListener('submit', function(event) {
         <p><strong>Total del producto:</strong> $${totalProducto.toLocaleString()}</p>
         <p><strong>Instalación:</strong> ${incluyeInstalacion ? 'Sí' : 'No'}</p>
         <p><strong>Costo de instalación:</strong> $${costoInstalacion.toLocaleString()}</p>
+        <p><strong>Total antes de IVA:</strong> $${totalAntesIVA.toLocaleString()}</p>
+        <p><strong>IVA (19%):</strong> $${iva.toLocaleString()}</p>
         <p><strong>Total final:</strong> $${totalFinal.toLocaleString()}</p>
     `;
 });
-
