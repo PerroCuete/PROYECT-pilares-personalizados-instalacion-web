@@ -18,6 +18,7 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    position: relative; /* Asegura que el header no interfiera con otros elementos */
 }
 
 header h1 {
@@ -29,6 +30,8 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    position: relative; /* Asegura que los enlaces no se oculten */
+    z-index: 10; /* Asegura que los enlaces estén encima de otros elementos */
 }
 
 nav ul li {
@@ -39,10 +42,14 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    display: inline-block;
+    padding: 5px 10px; /* Añadido para mejorar la interacción */
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    background-color: #555; /* Color de fondo al pasar el ratón */
 }
 
 /* Estilo del contenido principal */
@@ -149,3 +156,12 @@ footer {
     margin-top: 40px;
 }
 
+/* Solución para el problema de desaparición de enlaces */
+nav ul li a {
+    position: relative; /* Asegura que no se oculten al hacer clic */
+    z-index: 2; /* Coloca los enlaces encima de otros elementos */
+}
+
+nav ul li a:focus, nav ul li a:active {
+    background-color: #444; /* Fondo más oscuro cuando el enlace está activo o en foco */
+}
