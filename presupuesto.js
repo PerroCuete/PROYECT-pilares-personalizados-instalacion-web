@@ -1,47 +1,36 @@
-document.getElementById('formPresupuesto').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevenir el envío del formulario
-    
-    // Obtener los valores del formulario
-    const producto = document.getElementById('producto').value;
-    const cantidad = document.getElementById('cantidad').value;
-    const instalacion = document.getElementById('instalacion').value;
-    
-    // Definir los precios de los productos
-    let precioUnitario;
-    switch(producto) {
-        case 'modelo1':
-            precioUnitario = 15000;
-            break;
-        case 'modelo2':
-            precioUnitario = 17000;
-            break;
-        case 'modelo3':
-            precioUnitario = 20000;
-            break;
-        default:
-            precioUnitario = 0;
-    }
-    
-    // Calcular el costo de la instalación (si aplica)
-    let costoInstalacion = 0;
-    if (instalacion === 'si') {
-        costoInstalacion = 5000; // Ejemplo de costo de instalación
-    }
-    
-    // Calcular el costo total
-    const totalProducto = precioUnitario * cantidad;
-    const totalPresupuesto = totalProducto + costoInstalacion;
+// Selección del formulario y del contenedor donde se mostrará el presupuesto
+const formPresupuesto = document.getElementById('formPresupuesto');
+const resultadoPresupuesto = document.getElementById('presupuestoCalculado');
 
-    // Mostrar el resultado en el div
-    const resultadoDiv = document.getElementById('resultadoPresupuesto');
-    resultadoDiv.innerHTML = `
-        <h3>Tu presupuesto</h3>
-        <p><strong>Producto seleccionado:</strong> ${producto}</p>
+// Función para calcular y mostrar el presupuesto
+formPresupuesto.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Obtener los valores del formulario
+    const productoSelect = document.getElementById('producto');
+    const cantidadInput = document.getElementById('cantidad');
+    const instalacionSelect = document.getElementById('instalacion');
+
+    // Obtener el precio del producto seleccionado
+    const precioUnitario = parseFloat(productoSelect.options[productoSelect.selectedIndex].dataset.precio);
+    const cantidad = parseInt(cantidadInput.value);
+    const incluyeInstalacion = instalacionSelect.value === 'si';
+
+    // Calcular el precio total
+    const totalProducto = precioUnitario * cantidad;
+    const costoInstalacion = incluyeInstalacion ? 5000 * cantidad : 0;  // Asumimos $5000 por instalación
+
+    // Calcular el total final
+    const totalFinal = totalProducto + costoInstalacion;
+
+    // Mostrar el resultado en el cuadro de presupuesto
+    resultadoPresupuesto.innerHTML = `
+        <p><strong>Producto seleccionado:</strong> ${productoSelect.options[productoSelect.selectedIndex].text}</p>
         <p><strong>Cantidad:</strong> ${cantidad}</p>
         <p><strong>Precio por unidad:</strong> $${precioUnitario.toLocaleString()}</p>
-        <p><strong>Total de productos:</strong> $${totalProducto.toLocaleString()}</p>
-        <p><strong>Instalación:</strong> ${instalacion === 'si' ? 'Sí' : 'No'}</p>
+        <p><strong>Total del producto:</strong> $${totalProducto.toLocaleString()}</p>
+        <p><strong>Instalación:</strong> ${incluyeInstalacion ? 'Sí' : 'No'}</p>
         <p><strong>Costo de instalación:</strong> $${costoInstalacion.toLocaleString()}</p>
-        <p><strong>Total del presupuesto:</strong> $${totalPresupuesto.toLocaleString()}</p>
+        <p><strong>Total final:</strong> $${totalFinal.toLocaleString()}</p>
     `;
 });
