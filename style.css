@@ -61,36 +61,66 @@ main {
     margin-top: 80px; /* Para dejar espacio debajo del header */
 }
 
-/* Sección de Misión, Visión, Valores y Propósito */
-#mision-vision-valores {
+/* Productos Section */
+#productos {
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-#mision-vision-valores h2 {
+#productos h2 {
     text-align: center;
     font-size: 28px;
     color: #007bff;
     margin-bottom: 20px;
 }
 
-#mision-vision-valores p, 
-#mision-vision-valores ul {
-    font-size: 16px;
-    line-height: 1.8;
-    margin-bottom: 20px;
+#formPresupuesto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-#mision-vision-valores ul {
-    list-style-type: square;
-    margin-left: 20px;
+#formPresupuesto label {
+    font-size: 16px;
 }
 
-#mision-vision-valores ul li {
+#formPresupuesto select,
+#formPresupuesto input {
+    padding: 8px;
     font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formPresupuesto button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#formPresupuesto button:hover {
+    background-color: #0056b3;
+}
+
+/* Presupuesto Calculado */
+#presupuestoCalculado {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#presupuestoCalculado p {
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -104,11 +134,4 @@ footer {
 
 footer p {
     font-size: 14px;
-}
-
-/* Estilos adicionales */
-h2, h3 {
-    font-size: 1.8em;
-    color: #333;
-    font-weight: bold;
 }
