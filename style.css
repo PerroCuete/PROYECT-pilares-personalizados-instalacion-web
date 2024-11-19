@@ -1,31 +1,34 @@
-/* General */
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset de márgenes y padding */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Header */
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
 header {
     background-color: #333;
-    color: white;
+    color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
     font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-/* Navbar */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
-    text-align: center;
 }
 
 nav ul li {
@@ -34,102 +37,182 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.1em;
 }
 
-/* Main section */
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Estilo común para las secciones */
-section {
-    margin-bottom: 30px;
-    padding: 20px;
+/* Sección Misión */
+#mision {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Títulos */
-section h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-/* Contenido de las secciones */
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-}
-
-.imagen-seccion {
-    width: 30%;
-    height: auto;
-    border-radius: 8px;
-}
-
-section p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    color: #555;
-    max-width: 65%;
-}
-
-/* Para la sección de propósito sin imagen */
-#proposito {
+    padding: 40px 20px;
+    margin-top: 30px;
     text-align: center;
-    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#mision img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#mision p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Sección Visión */
+#vision {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#vision img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#vision p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Sección Valores */
+#valores {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#valores img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#valores ul {
+    list-style: none;
+    padding: 0;
+}
+
+#valores ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Sección Propósito */
+#proposito {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#proposito h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 #proposito p {
-    font-size: 1.5em;
-    color: #555;
+    font-size: 1.2em;
     line-height: 1.8;
+    max-width: 900px;
     margin: 0 auto;
-    max-width: 800px; /* Controla el ancho del texto */
-    padding: 10px 0;
+    padding: 10px;
 }
 
-/* Footer */
+/* Estilo para el Footer */
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 15px 0;
-    position: relative;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Estilos de los formularios */
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+form input, form select {
     width: 100%;
-    bottom: 0;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
 }
 
-/* Media Query para dispositivos móviles */
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .imagen-seccion {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    section h2 {
-        font-size: 2em;
-    }
-
-    section p {
-        font-size: 1.1em;
-    }
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Estilos para mostrar el presupuesto */
+#presupuestoCalculado {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#presupuestoCalculado p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#presupuestoCalculado strong {
+    font-weight: bold;
+}
+
