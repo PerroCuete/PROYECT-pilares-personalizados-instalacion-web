@@ -1,21 +1,91 @@
-/* Sección de productos */
-#productos {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Título de productos */
-#productos h2 {
-    font-size: 28px;
+/* Fondo y fuente base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Estilo de encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
 }
 
-/* Contenedor de lista de productos */
+header h1 {
+    margin: 0;
+}
+
+/* Estilo de navegación */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+    text-decoration: underline;
+}
+
+/* Estilo del contenido principal */
+main {
+    padding: 20px;
+}
+
+/* Estilo de la sección de innovación */
+#innovacion {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#innovacion h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#innovacion h3 {
+    font-size: 20px;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+#innovacion p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilo de la sección de productos */
+#productos {
+    text-align: center;
+}
+
 .productos-lista {
     display: flex;
     justify-content: space-around;
@@ -24,64 +94,74 @@
     margin-top: 20px;
 }
 
-/* Estilo de cada tarjeta de producto */
 .producto {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    padding: 15px;
     width: 280px;
-    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efecto hover sobre tarjeta de producto */
-.producto:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Estilo de la imagen del producto */
 .producto img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
     border-radius: 5px;
-    margin-bottom: 15px;
 }
 
-/* Título de producto */
 .producto h3 {
+    margin-top: 10px;
     font-size: 20px;
     color: #333;
-    margin-top: 10px;
 }
 
-/* Descripción de producto */
 .producto p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
-/* Precio de producto */
 .producto strong {
-    font-size: 18px;
     color: #f39c12;
 }
 
-/* Botón de acción (por ejemplo, agregar al carrito) */
-.producto button {
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Estilo de los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form label {
+    font-size: 16px;
+}
+
+form input, form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 16px;
     background-color: #f39c12;
     border: none;
     border-radius: 5px;
     color: white;
-    padding: 10px 15px;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.producto button:hover {
+form button:hover {
     background-color: #e67e22;
 }
