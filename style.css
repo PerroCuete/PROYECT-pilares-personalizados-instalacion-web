@@ -276,11 +276,6 @@ form button:hover {
     display: block;
     margin: 0 auto;
 }
-/* Centrar títulos en la sección de innovación */
-#innovacion h2,
-#innovacion h3 {
-    text-align: center;
-}
 /* Estilo para la imagen de I+D+I+E */
 .imagen-innovacion {
     text-align: center;
@@ -305,4 +300,13 @@ form button:hover {
     width: 100%;
     display: block;
     margin: 0 auto;
+}
+/* Centrar títulos en la sección de propuesta */
+#propuesta h2 {
+    text-align: center;
+}
+/* Centrar títulos en la sección de innovación */
+#innovacion h2,
+#innovacion h3 {
+    text-align: center;
 }
