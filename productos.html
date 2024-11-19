@@ -25,38 +25,38 @@
 
             <!-- Contenedor de las imágenes de los productos en formato horizontal -->
             <div class="producto-container">
-                <!-- Producto 1: Pandereta -->
+                <!-- Producto 1: Cerco Normal -->
                 <div class="producto-item">
-                    <img src="imagenes2/pandereta.jpeg" alt="Pandereta" class="producto-img"/>
-                    <h3>Pandereta</h3>
-                    <p>Precio: $15,000</p>
+                    <img src="imagenes2/cerco-normal.jpeg" alt="Cerco Normal" class="producto-img"/>
+                    <h3>Cerco Normal</h3>
+                    <p>Precio: $35,000 por metro lineal</p>
                 </div>
 
-                <!-- Producto 2: Pandereta Premium -->
+                <!-- Producto 2: Cerco Premium -->
                 <div class="producto-item">
-                    <img src="imagenes2/pandereta-premium.jpeg" alt="Pandereta Premium" class="producto-img"/>
-                    <h3>Pandereta Premium</h3>
-                    <p>Precio: $17,000</p>
+                    <img src="imagenes2/cerco-premium.jpeg" alt="Cerco Premium" class="producto-img"/>
+                    <h3>Cerco Premium</h3>
+                    <p>Precio: $45,000 por metro lineal</p>
                 </div>
 
-                <!-- Producto 3: Pandereta Deluxe -->
+                <!-- Producto 3: Cerco Deluxe -->
                 <div class="producto-item">
-                    <img src="imagenes2/pandereta-deluxe.jpeg" alt="Pandereta Deluxe" class="producto-img"/>
-                    <h3>Pandereta Deluxe</h3>
-                    <p>Precio: $20,000</p>
+                    <img src="imagenes2/cerco-deluxe.jpeg" alt="Cerco Deluxe" class="producto-img"/>
+                    <h3>Cerco Deluxe</h3>
+                    <p>Precio: $55,000 por metro lineal</p>
                 </div>
             </div>
 
-            <!-- Formulario para seleccionar producto, cantidad y opción de instalación -->
+            <!-- Formulario para seleccionar producto, cantidad (en metros lineales) y opción de instalación -->
             <form id="formPresupuesto">
                 <label for="producto">Seleccionar producto:</label>
                 <select id="producto" required>
-                    <option value="pandereta" data-precio="15000">Pandereta - $15,000</option>
-                    <option value="pandereta" data-precio="17000">Pandereta Premium - $17,000</option>
-                    <option value="pandereta" data-precio="20000">Pandereta Deluxe - $20,000</option>
+                    <option value="cerco" data-precio="35000">Cerco Normal - $35,000 por metro lineal</option>
+                    <option value="cerco" data-precio="45000">Cerco Premium - $45,000 por metro lineal</option>
+                    <option value="cerco" data-precio="55000">Cerco Deluxe - $55,000 por metro lineal</option>
                 </select>
 
-                <label for="cantidad">Cantidad:</label>
+                <label for="cantidad">Cantidad (en metros lineales):</label>
                 <input type="number" id="cantidad" required min="1" />
 
                 <label for="instalacion">¿Incluir instalación?</label>
@@ -82,4 +82,5 @@
     <script src="presupuesto.js"></script>
 </body>
 </html>
+
 
