@@ -1,138 +1,92 @@
-/* General */
-* {
+/* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
-    line-height: 1.6;
-    padding-top: 60px; /* Para evitar que el contenido quede oculto detrás del header */
 }
 
-/* Header */
+h1, h2 {
+    color: #2c3e50;
+}
+
 header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #3498db;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
 }
 
 header h1 {
-    text-align: center;
-    font-size: 24px;
+    font-size: 2.5em;
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
-    text-align: center;
-    margin-top: 10px;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-size: 16px;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    font-size: 1.2em;
 }
 
 nav ul li a:hover {
-    background-color: #0056b3;
+    text-decoration: underline;
 }
 
-/* Main Section */
+/* Estilos para el contenido principal */
 main {
-    padding: 20px;
-    margin-top: 80px; /* Para dejar espacio debajo del header */
+    padding: 40px 15px;
 }
 
-/* Productos Section */
-#productos {
+#propuesta {
     background-color: #fff;
+    padding: 30px;
+    margin: 20px 0;
     border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#propuesta h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#propuesta p {
+    font-size: 1.1em;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
-#productos h2 {
-    text-align: center;
-    font-size: 28px;
-    color: #007bff;
-    margin-bottom: 20px;
-}
-
-#formPresupuesto {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#formPresupuesto label {
-    font-size: 16px;
-}
-
-#formPresupuesto select,
-#formPresupuesto input {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#formPresupuesto button {
-    padding: 10px;
-    font-size: 18px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#formPresupuesto button:hover {
-    background-color: #0056b3;
-}
-
-/* Presupuesto Calculado */
-#presupuestoCalculado {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#presupuestoCalculado p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-/* Footer */
 footer {
+    background-color: #2c3e50;
     text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    margin-top: 30px;
+    padding: 20px;
+    color: white;
+    font-size: 1em;
 }
 
-footer p {
-    font-size: 14px;
-}
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
 
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #propuesta {
+        padding: 20px;
+    }
+}
