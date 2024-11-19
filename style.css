@@ -67,17 +67,16 @@ section h2 {
 .content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 20px;
 }
 
-.content img {
+.imagen-seccion {
     width: 30%;
     height: auto;
     border-radius: 8px;
 }
 
-/* Párrafos */
 section p {
     font-size: 1.2em;
     line-height: 1.8;
@@ -113,7 +112,7 @@ footer {
         text-align: center;
     }
 
-    .content img {
+    .imagen-seccion {
         width: 80%;
         margin-bottom: 20px;
     }
@@ -126,5 +125,3 @@ footer {
         font-size: 1.1em;
     }
 }
-
-
