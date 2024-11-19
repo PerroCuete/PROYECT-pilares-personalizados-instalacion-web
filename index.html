@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - Pilares y Bulldozers</title>
+    <title>Inicio - Pilares y Bulldozers</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,20 +13,47 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="mision-vision.html">Misión, Visión, Valores</a></li>
+                <li><a href="productos.html">Productos</a></li>
                 <li><a href="innovacion.html">I+D+I+E y Economía Circular</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Sección de bienvenida -->
+        <section id="bienvenida">
+            <h2>Bienvenidos a Pilares y Bulldozers</h2>
+            <p>Somos una empresa dedicada a la fabricación, venta e instalación de pilares y bulldozers con diseños a medida, pensados para satisfacer las necesidades de cada cliente. Trabajamos con materiales de alta calidad y ofrecemos soluciones innovadoras adaptadas a cada proyecto.</p>
+        </section>
+
+        <!-- Misión y visión de la empresa -->
+        <section id="mision-vision">
+            <h2>Nuestra Misión y Visión</h2>
+            <p><strong>Misión:</strong> Proporcionar soluciones eficientes en la fabricación e instalación de pilares y bulldozers, basados en la innovación tecnológica y el respeto por el medio ambiente.</p>
+            <p><strong>Visión:</strong> Ser la empresa líder en el sector de la construcción y maquinaria, conocida por su compromiso con la calidad, sostenibilidad y satisfacción del cliente.</p>
+        </section>
+
+        <!-- Valores de la empresa -->
+        <section id="valores">
+            <h2>Valores de la Empresa</h2>
+            <ul>
+                <li><strong>Innovación:</strong> Siempre buscamos nuevas formas de mejorar nuestros productos y servicios.</li>
+                <li><strong>Sostenibilidad:</strong> Comprometidos con la economía circular y la protección del medio ambiente.</li>
+                <li><strong>Compromiso:</strong> Trabajamos con dedicación y profesionalismo para lograr los mejores resultados.</li>
+                <li><strong>Calidad:</strong> Todos nuestros productos y servicios cumplen con los más altos estándares.</li>
+            </ul>
+        </section>
+
+        <!-- Productos -->
         <section id="productos">
             <h2>Productos</h2>
+            <p>Descubre nuestra gama de productos. Fabricamos pilares y bulldozers de alta calidad y adaptados a las necesidades de tu proyecto.</p>
             
             <!-- Lista de productos -->
             <div class="productos-lista">
                 <!-- Producto 1 -->
                 <div class="producto">
-                    <img src="https://github.com/PerroCuete/pilares-pilares-personalizados-instalacion-web/blob/121500233e897e600eac86d56cc8d71d5b06225d/imagenes%20panderetas/imagen1.png">
+                    <img src="https://github.com/tu-usuario/tu-repositorio/raw/main/imagenes%20panderetas/pandereta1.png" alt="Pandereta Modelo 1">
                     <h3>Pandereta Modelo 1</h3>
                     <p>Descripción del producto.</p>
                     <p><strong>Precio por unidad:</strong> $15,000</p>
@@ -34,7 +61,7 @@
                 
                 <!-- Producto 2 -->
                 <div class="producto">
-                    <img src="https://github.com/PerroCuete/pilares-pilares-personalizados-instalacion-web/blob/121500233e897e600eac86d56cc8d71d5b06225d/imagenes%20panderetas/imagen2.png">
+                    <img src="https://github.com/tu-usuario/tu-repositorio/raw/main/imagenes%20panderetas/pandereta2.png" alt="Pandereta Modelo 2">
                     <h3>Pandereta Modelo 2</h3>
                     <p>Descripción del producto.</p>
                     <p><strong>Precio por unidad:</strong> $17,000</p>
@@ -42,39 +69,40 @@
                 
                 <!-- Producto 3 -->
                 <div class="producto">
-                    <img src="https://github.com/PerroCuete/pilares-pilares-personalizados-instalacion-web/blob/121500233e897e600eac86d56cc8d71d5b06225d/imagenes%20panderetas/imagen3.png">
+                    <img src="https://github.com/tu-usuario/tu-repositorio/raw/main/imagenes%20panderetas/pandereta3.png" alt="Pandereta Modelo 3">
                     <h3>Pandereta Modelo 3</h3>
                     <p>Descripción del producto.</p>
                     <p><strong>Precio por unidad:</strong> $20,000</p>
                 </div>
             </div>
-
-            <!-- Formulario de presupuesto -->
-            <section id="presupuesto">
-                <h2>Solicita tu presupuesto</h2>
-                <form id="formPresupuesto">
-                    <label for="producto">Selecciona el producto:</label>
-                    <select id="producto" name="producto">
-                        <option value="modelo1">Pandereta Modelo 1</option>
-                        <option value="modelo2">Pandereta Modelo 2</option>
-                        <option value="modelo3">Pandereta Modelo 3</option>
-                    </select>
-
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" required>
-
-                    <label for="instalacion">¿Deseas incluir instalación?</label>
-                    <select id="instalacion" name="instalacion">
-                        <option value="si">Sí</option>
-                        <option value="no">No</option>
-                    </select>
-
-                    <button type="submit">Generar presupuesto</button>
-                </form>
-
-                <div id="resultadoPresupuesto"></div>
-            </section>
         </section>
+
+        <!-- Presupuesto -->
+        <section id="presupuesto">
+            <h2>Solicita tu presupuesto</h2>
+            <form id="formPresupuesto">
+                <label for="producto">Selecciona el producto:</label>
+                <select id="producto" name="producto">
+                    <option value="modelo1">Pandereta Modelo 1</option>
+                    <option value="modelo2">Pandereta Modelo 2</option>
+                    <option value="modelo3">Pandereta Modelo 3</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+                <label for="instalacion">¿Deseas incluir instalación?</label>
+                <select id="instalacion" name="instalacion">
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button type="submit">Generar presupuesto</button>
+            </form>
+
+            <div id="resultadoPresupuesto"></div>
+        </section>
+
     </main>
 
     <footer>
@@ -84,4 +112,5 @@
     <script src="presupuesto.js"></script>
 </body>
 </html>
+
 
