@@ -46,6 +46,55 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Sección Productos */
+#productos {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Contenedor para los productos */
+.producto-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Estilo para cada item de producto */
+.producto-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.producto-item:hover {
+    transform: scale(1.05);
+}
+
+/* Asegurar que las imágenes se ajusten correctamente dentro de su contenedor */
+.producto-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.producto-item h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.producto-item p {
+    color: #666;
+}
+
 /* Sección Misión */
 #mision {
     background-color: #fff;
@@ -215,4 +264,3 @@ form button:hover {
 #presupuestoCalculado strong {
     font-weight: bold;
 }
-
