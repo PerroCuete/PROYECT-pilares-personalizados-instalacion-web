@@ -15,7 +15,9 @@ formPresupuesto.addEventListener('submit', function(event) {
 
     // Cálculos
     const totalProducto = precioUnitario * cantidad;
-    const costoInstalacion = incluyeInstalacion ? 10000 : 0; // Cambio a $10,000 por instalación
+    
+    // Ahora el costo de instalación es de $5,000 por metro lineal
+    const costoInstalacion = incluyeInstalacion ? (5000 * cantidad) : 0;
 
     const totalFinal = totalProducto + costoInstalacion;
 
@@ -30,5 +32,3 @@ formPresupuesto.addEventListener('submit', function(event) {
         <p><strong>Total final:</strong> $${totalFinal.toLocaleString()}</p>
     `;
 });
-
-
