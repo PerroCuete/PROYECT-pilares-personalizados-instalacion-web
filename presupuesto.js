@@ -4,7 +4,7 @@ const resultadoPresupuesto = document.getElementById('presupuestoCalculado');
 
 // Función para calcular y mostrar el presupuesto
 formPresupuesto.addEventListener('submit', function(event) {
-    event.preventDefault(); // Evitar que el formulario se envíe
+    event.preventDefault(); // Evitar que el formulario se envíe y recargue la página
 
     // Obtener los valores del formulario
     const productoSelect = document.getElementById('producto');
@@ -34,5 +34,3 @@ formPresupuesto.addEventListener('submit', function(event) {
         <p><strong>Total final:</strong> $${totalFinal.toLocaleString()}</p>
     `;
 });
-
-
