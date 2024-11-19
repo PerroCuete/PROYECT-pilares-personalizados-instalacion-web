@@ -34,3 +34,4 @@ formPresupuesto.addEventListener('submit', function(event) {
         <p><strong>Total final:</strong> $${totalFinal.toLocaleString()}</p>
     `;
 });
+
