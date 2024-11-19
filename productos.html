@@ -58,9 +58,9 @@
             <form id="formPresupuesto">
                 <label for="producto">Selecciona el producto:</label>
                 <select id="producto" name="producto">
-                    <option value="modelo1">Pandereta Modelo 1 - $15,000</option>
-                    <option value="modelo2">Pandereta Modelo 2 - $17,000</option>
-                    <option value="modelo3">Pandereta Modelo 3 - $20,000</option>
+                    <option value="modelo1" data-precio="15000">Pandereta Modelo 1 - $15,000</option>
+                    <option value="modelo2" data-precio="17000">Pandereta Modelo 2 - $17,000</option>
+                    <option value="modelo3" data-precio="20000">Pandereta Modelo 3 - $20,000</option>
                 </select>
 
                 <label for="cantidad">Cantidad:</label>
@@ -75,7 +75,13 @@
                 <button type="submit">Generar presupuesto</button>
             </form>
 
-            <div id="resultadoPresupuesto"></div>
+            <!-- Resultado del presupuesto -->
+            <div id="resultadoPresupuesto">
+                <h3>Resultado del presupuesto:</h3>
+                <div id="presupuestoCalculado">
+                    <!-- El presupuesto calculado se mostrará aquí -->
+                </div>
+            </div>
         </section>
     </main>
 
@@ -86,6 +92,3 @@
     <script src="presupuesto.js"></script>
 </body>
 </html>
-
-
-
