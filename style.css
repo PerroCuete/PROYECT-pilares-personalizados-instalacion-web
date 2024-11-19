@@ -1,133 +1,54 @@
-/* General */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+/* Estilos para el formulario de presupuesto */
+#presupuesto {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-body {
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-    padding: 0 20px;
+#presupuesto h2 {
+    font-size: 2em;
+    color: #0078d4;
 }
 
-/* Header */
-header {
-    background-color: #0078d4;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style: none;
+#presupuesto form {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 15px;
 }
 
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 3px;
-}
-
-nav ul li a:hover {
-    background-color: #005b9f;
-}
-
-/* Main Sections */
-main {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-main h2 {
-    font-size: 1.6em;
-    color: #0078d4;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #f4f4f4;
-    padding-bottom: 5px;
-}
-
-main p, main ul, main li {
-    margin-bottom: 10px;
-    font-size: 1em;
-}
-
-/* Product Section */
-#productos .productos-lista {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.producto {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 250px;
-    padding: 15px;
-    text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.producto img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 15px;
-    border-radius: 3px;
-}
-
-.producto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.producto h3 {
+#presupuesto label {
     font-size: 1.2em;
-    color: #333;
+}
+
+#presupuesto input, #presupuesto select, #presupuesto button {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#presupuesto button {
+    background-color: #f39c12;
+    color: white;
+    cursor: pointer;
+}
+
+#presupuesto button:hover {
+    background-color: #e67e22;
+}
+
+#presupuestoCalculado {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#presupuestoCalculado p {
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-.producto p {
-    font-size: 0.9em;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #0078d4;
-    color: white;
-    border-radius: 5px;
-}
-
-footer p {
-    font-size: 0.9em;
-}
