@@ -276,7 +276,11 @@ form button:hover {
     display: block;
     margin: 0 auto;
 }
-
+/* Centrar títulos en la sección de innovación */
+#innovacion h2,
+#innovacion h3 {
+    text-align: center;
+}
 /* Estilo para la imagen de I+D+I+E */
 .imagen-innovacion {
     text-align: center;
