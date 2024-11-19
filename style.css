@@ -87,11 +87,19 @@ section p {
 /* Para la sección de propósito sin imagen */
 #proposito {
     text-align: center;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #proposito p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: #555;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px; /* Controla el ancho del texto */
+    padding: 10px 0;
 }
 
 /* Footer */
