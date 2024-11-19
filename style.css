@@ -7,24 +7,22 @@
 
 /* Fondo y fuente base */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
 /* Estilo de encabezado */
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 28px;
 }
 
 /* Estilo de navegación */
@@ -36,96 +34,68 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
-    background-color: #f39c12;
     text-decoration: underline;
 }
 
 /* Estilo del contenido principal */
 main {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 30px;
 }
 
-/* Estilo de la sección de bienvenida */
+/* Sección de bienvenida */
 #bienvenida {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-#bienvenida h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-#bienvenida p {
-    font-size: 1.1em;
-    color: #666;
-}
-
-/* Estilo de la sección de misión, visión */
-#mission-vision, #valores, #proposito {
     background-color: #fff;
-    border-radius: 8px;
     padding: 20px;
+    border-radius: 5px;
     margin-bottom: 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#mission-vision h2, #valores h2, #proposito h2 {
-    text-align: center;
-    font-size: 2em;
+/* Sección de Misión y Visión */
+#mision-vision, #valores, #proposito {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
     color: #333;
-    margin-bottom: 20px;
-}
-
-#mission-vision p, #valores ul, #proposito p {
-    font-size: 1.1em;
-    line-height: 1.8;
-    color: #666;
-}
-
-#valores ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#valores li {
+    font-size: 24px;
     margin-bottom: 15px;
 }
 
-#valores li strong {
-    color: #f39c12;
+p, ul {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-#valores li span {
-    display: block;
-    margin-top: 5px;
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 /* Estilo del pie de página */
 footer {
     background-color: #333;
     color: white;
+    padding: 10px 0;
     text-align: center;
-    padding: 15px;
     margin-top: 40px;
 }
 
-footer p {
-    font-size: 1.1em;
-}
